@@ -2,53 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Página 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales Marinos</title>
+    <link rel="stylesheet" href="/Styles/stylePagina1.css"> <!-- Vinculamos el CSS externo -->
 </head>
 <body>
-    <nav style="background-color: rgb(234, 160, 189)">
-        <h2 >Índice:</h2>
-        <ul>
-            <li><a href="/Paginas/pagina1.html">Elementos Genéricos</a></li>
-            <li><a href="/Paginas/pagina2.html">Elementos Semánticos</a></li>
-            <li><a href="/Paginas/pagina3.html">Elementos de Texto</a></li>
-            <li><a href="/Paginas/pagina4.html">Tabla compuesta</a></li>
-            <li><a href="/Paginas/pagina5.html">Imagenes</a></li>
-        </ul>
-    </nav>
-    <hr>
-     <!-- HEADER -->
-     <div class="header">
-        <p>HEADER</p>
-    </div>
 
-    <!-- ASIDE LEFT -->
-    <div class="aside">
-        ASIDE LEFT
-    </div>
+    <header id="header">
+        <h1>Enciclopedia de Animales Marinos</h1>
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <div class="main">
-        <div class="article">
-            <div class="section">
-                <p>Lorem ipsum dolor sit amet <span class="highlight">consectetur</span> adipisicing elit. Consequuntur, eligendi voluptatem cupiditate nam aliquid dignissimos totam quisquam quia perspiciatis ipsam quidem, sapiente quae ab animi dolorem aliquam deserunt! Porro, nam?</p>
-            </div>
-            <div class="section">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eligendi voluptatem cupiditate nam aliquid <span class="highlight">doloremque</span> totam quisquam quia perspiciatis ipsam quidem, sapiente quae ab animi dolorem aliquam deserunt! Porro, nam?</p>
-            </div>
-        </div>
-    </div>
+    <aside id="aside-left">
+        <h2>Índice:</h2>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/Paginas/pagina1.html">Elementos Genéricos</a></li>
+                <li><a href="/Paginas/pagina2.html">Elementos Semánticos</a></li>
+                <li><a href="/Paginas/pagina3.html">Elementos de Texto</a></li>
+                <li><a href="/Paginas/pagina4.html">Tabla compuesta</a></li>
+                <li><a href="/Paginas/pagina5.html">Imágenes</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <!-- ASIDE RIGHT -->
-    <div class="aside">
-        ASIDE RIGHT
-    </div>
+    <main id="main">
+        <section id="delfin" style="margin-top: 20px;">
+            <h2 class="keyword">Delfín</h2>
+            <p>
+                Los delfines son <span class="keyword">mamíferos marinos</span> extremadamente inteligentes y sociales, conocidos por su capacidad de aprender trucos y su agudo sentido de la audición. 
+                Se comunican entre sí mediante una serie de sonidos y tienen un cerebro que, en proporción a su tamaño corporal, es uno de los más grandes del reino animal. Los delfines son 
+                conocidos por su agilidad en el agua, pueden nadar a velocidades de hasta 37 km/h y saltar varios metros fuera del agua.
+            </p>
+        </section>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        <p>© 2018, UCB</p>
-    </div>
-    
+        <section id="tiburon" style="margin-top: 20px;">
+            <h2 class="keyword">Tiburón</h2>
+            <p>
+                Los tiburones son una familia diversa de peces <span class="keyword">depredadores</span> que habitan en todos los océanos del mundo. Conocidos por sus afilados dientes y 
+                su naturaleza cazadora, los tiburones han existido por más de 400 millones de años. Son esenciales para mantener el equilibrio en los ecosistemas marinos, ya que eliminan 
+                animales débiles o enfermos. Algunas especies, como el tiburón blanco, pueden medir más de 6 metros de longitud.
+            </p>
+        </section>
+
+        <section id="ballena" style="margin-top: 20px;">
+            <h2 class="keyword">Ballena</h2>
+            <p>
+                Las ballenas son los <span class="keyword">mamíferos</span> más grandes del planeta. A pesar de su enorme tamaño, son criaturas majestuosas y pacíficas. Las ballenas 
+                barbadas, como la ballena azul, se alimentan filtrando kril y pequeños peces del agua, mientras que las ballenas dentadas, como el cachalote, cazan presas más grandes, 
+                incluyendo calamares gigantes. Algunas ballenas migran miles de kilómetros cada año entre zonas de alimentación y áreas de cría.
+            </p>
+        </section>
+
+        <section id="pulpo" style="margin-top: 20px;">
+            <h2 class="keyword">Pulpo</h2>
+            <p>
+                Los pulpos son <span class="keyword">invertebrados</span> extremadamente inteligentes, con la capacidad de resolver problemas complejos y escapar de los depredadores 
+                usando estrategias como la camuflajeación o la expulsión de tinta. Con sus ocho brazos, cada uno equipado con ventosas, son excelentes cazadores de cangrejos y otros 
+                invertebrados. Los pulpos pueden cambiar de color y textura en cuestión de segundos, adaptándose al entorno para esconderse de los depredadores.
+            </p>
+        </section>
+
+        <section id="estrella-de-mar" style="margin-top: 20px;">
+            <h2 class="keyword">Estrella de Mar</h2>
+            <p>
+                La estrella de mar es un animal fascinante que habita en una variedad de profundidades oceánicas, desde las costas hasta los fondos más profundos. Son <span class="keyword">depredadores</span> que 
+                se alimentan de moluscos, y tienen la sorprendente capacidad de regenerar extremidades perdidas. Algunas especies incluso pueden clonar partes de sí mismas. Las estrellas de mar se 
+                desplazan usando un sistema de pequeños "pies ambulacrales" que funcionan con agua, permitiéndoles moverse lentamente pero de forma constante.
+            </p>
+        </section>
+    </main>
+
+    <aside id="aside-right">
+        <h2>Curiosidades Marinas</h2>
+        <p>¿Sabías que algunas especies de pulpos pueden usar herramientas?</p>
+        <p>Las ballenas azules pueden vivir más de 90 años y son el animal más grande que ha existido en la Tierra.</p>
+       
+    </aside>
+
+    <footer id="footer">
+        <p>© 2024, Información sobre Animales Marinos. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
